@@ -51,16 +51,13 @@ After you're finished please remove all the comments and instructions!
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [VET_CLINIC_DATABASE] <a name="about-project"></a>
+# 📖 VET CLINIC DATABASE<a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
-**[VET_CLINIC_DATABASE]** is a sql database for a vet clinic that stores data about animals such as their names, ages, dates of birth, escape attemps, weither they are neutered and their wheights.
+VET CLINIC DATABASE is a sql database for a vet clinic that stores data about animals such as their names, ages, dates of birth, escape attemps, weither they are neutered and their wheights.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -77,19 +74,15 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[create_data_base]**
-- **[create_animals_table]**
-- **[insert_animals_data]**
+- create data base
+- create animals table
+- insert animals data
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -118,8 +111,6 @@ Clone this repository to your desired folder:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **Tshobohwa Salomon**
 
 - GitHub: [@Tshobohwa](https://github.com/Tshobohwa)
@@ -132,7 +123,7 @@ Clone this repository to your desired folder:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Possibility to remove a record]**
+- [ ] Possibility to remove a record
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
