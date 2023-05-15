@@ -4,3 +4,5 @@ SELECT name FROM animals WHERE neutered AND escape_attemps < 3;
 SELECT date_of_birth FROM animals WHERE name = 'Agumon' OR name = 'Pikachu';
 SELECT name, escape_attemps FROM animals WHERE weight_kg > 10.5;
 SELECT * FROM animals WHERE neutered;
+SELECT * FROM animals WHERE name != 'Gabumon';
+SELECT * FROM animals WHERE weight_kg BETWEEN 10.4 AND 17.3;
