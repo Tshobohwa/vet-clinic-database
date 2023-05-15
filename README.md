@@ -55,9 +55,9 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [VET_CLINIC_DATABASE] <a name="about-project"></a>
+# 📖 VET CLINIC DATABASE<a name="about-project"></a>
 
-**[VET_CLINIC_DATABASE]** is a sql database for a vet clinic that stores data about animals such as their names, ages, dates of birth, escape attemps, weither they are neutered and their wheights.
+VET CLINIC DATABASE is a sql database for a vet clinic that stores data about animals such as their names, ages, dates of birth, escape attemps, weither they are neutered and their wheights.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -73,8 +73,6 @@ After you're finished please remove all the comments and instructions!
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-
-> Describe between 1-3 key features of the application.
 
 - create data base
 - create animals table
