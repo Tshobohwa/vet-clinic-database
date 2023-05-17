@@ -12,6 +12,10 @@ INSERT INTO animals (id, name, date_of_birth, escape_attemps, neutered, weight_k
            (10, 'Blossom', '1998-10-13', 3, true, 17),
            (11, 'Ditto', '2022-05-14', 4, true, 22);
 
+INSERT INTO species (name)
+    VALUES  ('Pokemon'),
+            ('Digimon');
+
 INSERT INTO owners (full_name, age)
     VALUES  ('Sam Smith', 34),
             ('Jennifer Orwel', 19),
