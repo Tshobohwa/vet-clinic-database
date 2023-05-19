@@ -131,7 +131,7 @@ JOIN vets ON visits.vet_id = vets.id
 ORDER BY visits.visit_date
 LIMIT 1;
 
-SELECT animals.name, vets.name, visits.visit_date
+SELECT animals.name AS animal_name, vets.name AS vet_name, visits.visit_date
 	FROM animals
 	JOIN visits ON visits.animal_id = animals.id
 	JOIN vets ON vets.id = visits.vet_id
