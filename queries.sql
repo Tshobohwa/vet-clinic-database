@@ -88,3 +88,68 @@ JOIN animals ON owners.id = animals.owner_id
 GROUP BY owners.id, owners.full_name
 ORDER BY animal_count DESC
 LIMIT 1;
+
+
+SELECT animals.name AS williams_last_animal FROM animals
+JOIN visits ON animals.id = visits.animal_id
+JOIN vets ON visits.vet_id = vets.id
+WHERE vets.name = 'William Tatcher'
+ORDER BY visit_date DESC
+LIMIT 1;
+
+
+SELECT COUNT(DISTINCT animals.id) AS Stephanies_visits_number
+FROM animals
+JOIN visits ON animals.id = visits.animal_id
+JOIN vets ON vets.id = visits.vet_id
+WHERE vets.name = 'Stephanie Mendez';
+
+SELECT vets.name AS vet_name, species.name AS specializaty
+FROM vets
+LEFT JOIN specializations ON specializations.vet_id = vets.id
+LEFT JOIN species ON species.id = specializations.species_id;
+
+SELECT animals.name FROM animals
+JOIN visits ON visits.animal_id = animals.id
+JOIN vets ON visits.vet_id = vets.id
+WHERE vets.name = 'Stephanie Mendez'
+AND visits.visit_date BETWEEN '2020-04-01' AND '2020-08-30';
+
+SELECT
+	animals.name, COUNT (visits.animal_id) AS visits_number
+FROM animals
+JOIN visits
+ON visits.animal_id = animals.id
+GROUP BY animals.id
+ORDER BY visits_number DESC
+LIMIT 1;
+
+SELECT animals.name
+FROM animals
+JOIN visits ON visits.animal_id = animals.id
+JOIN vets ON visits.vet_id = vets.id
+ORDER BY visits.visit_date
+LIMIT 1;
+
+SELECT animals.name AS animal_name, vets.name AS vet_name, visits.visit_date
+	FROM animals
+	JOIN visits ON visits.animal_id = animals.id
+	JOIN vets ON vets.id = visits.vet_id
+	ORDER BY visits.visit_date DESC
+	LIMIT 1;
+
+SELECT COUNT(visits.vet_id) AS not_specialized_visits
+	FROM visits
+	LEFT JOIN vets ON vets.id = visits.vet_id
+	LEFT JOIN specializations ON specializations.vet_id = vets.id
+	WHERE specializations.species_id IS NULL;
+
+SELECT species.name AS suggested_specialisation, COUNT(species.name) AS species_visits
+FROM species
+JOIN animals ON animals.species_id = species.id
+JOIN visits ON animals.id = visits.animal_id
+JOIN vets ON vets.id = visits.vet_id 
+WHERE vets.name = 'Maisy Smith'
+GROUP BY species.name
+ORDER BY species_visits DESC
+LIMIT 1;
