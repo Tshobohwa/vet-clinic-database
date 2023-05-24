@@ -1,5 +1,7 @@
 ## Getting Started
 
+<img src='./assets/vet_clinic_diagram.png' width='800px'/>
+
 This repository includes files with plain SQL that can be used to recreate a database:
 
 - Use [schema.sql](./schema.sql) to create all tables.
